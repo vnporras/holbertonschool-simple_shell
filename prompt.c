@@ -1,5 +1,8 @@
 #include "main.h"
-
+/**
+* main - function that generates interactivity with the user.
+* Return: the required value.
+*/
 
 int main()
 {

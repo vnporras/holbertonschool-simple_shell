@@ -1,5 +1,9 @@
 #include "main.h"
 
+/**
+* execute - function that executes commands.
+* @userCommand: It is a pointer where the user enters commands.
+*/
 
 void execute(char *userCommand)
 {
