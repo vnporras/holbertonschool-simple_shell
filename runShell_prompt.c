@@ -18,7 +18,7 @@ void runShell(void)
 		{
 			break;
 		}
-		if (read > 0 && in_line[read -1] == '\n')
+		if (read > 0 && in_line[read - 1] == '\n')
 		{
 			in_line[read - 1] = '\0';
 		}
