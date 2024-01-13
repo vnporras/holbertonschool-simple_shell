@@ -2,7 +2,7 @@
 
 /**
 * main - Function that start the shell.
-* return: return 0 if the code is successful.
+* Return: return 0 if the code is successful.
 */
 
 int main(void)

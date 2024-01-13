@@ -1,7 +1,6 @@
 #include "main.h"
 /**
-* main - function that generates interactivity with the user.
-* Return: the required value.
+* runShell - function that generates interactivity with the user.
 */
 
 void runShell(void)
