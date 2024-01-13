@@ -5,8 +5,8 @@
 * return: return 0 if the code is successful.
 */
 
-int main()
+int main(void)
 {
 	runShell();
-	return 0;
+	return (0);
 }
