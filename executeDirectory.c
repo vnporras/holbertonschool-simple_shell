@@ -6,9 +6,9 @@
 */
 
 
-void executeDirectory(char *userCommand) 
+void executeDirectory(char *userCommand)
 {
-	if (access(userCommand, X_OK) == 0) 
+	if (access(userCommand, X_OK) == 0)
 	{
 		if (execlp(userCommand, userCommand, (char *)NULL) == -1)
 		{

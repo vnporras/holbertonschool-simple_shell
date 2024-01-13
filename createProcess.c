@@ -13,5 +13,5 @@ int createProcess(char *userCommand)
 	executeDirectory(userCommand);
 	executePath(userCommand, getenv("PATH"));
 	printf("The command not found\n");
-    	return -1;
+	return -1;
 }

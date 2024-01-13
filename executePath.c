@@ -9,6 +9,7 @@
 void executePath(char *userCommand, char *directory)
 {
 	char commandPath[1024];
+
 	snprintf(commandPath, sizeof(commandPath), "%s/%s", directory, userCommand);
 
 	if (access(commandPath, X_OK) == 0)
