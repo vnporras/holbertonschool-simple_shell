@@ -11,7 +11,6 @@ void runShell(void)
 
 	while (1)
 	{
-		printf("");
 		read = getline(&in_line, &size, stdin);
 
 		if (read == -1)
