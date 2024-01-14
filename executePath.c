@@ -19,4 +19,5 @@ void executePath(char *userCommand, char *directory)
 			exit(EXIT_FAILURE);
 		}
 	}
+	free(commandPath);
 }
