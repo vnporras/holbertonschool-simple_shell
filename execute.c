@@ -28,7 +28,6 @@ void execute(char *userCommand)
 	if (pid == 0)
 	{
 		execvp(args[0], args);
-		perror("Error executing command");
 		exit(EXIT_FAILURE);
 	}
 	else
