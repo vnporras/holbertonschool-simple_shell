@@ -11,8 +11,10 @@ void runShell(void)
 
 	while (1)
 	{
+		if (isatty(STDIN_FILENO))
+		{
+		}
 		read = getline(&in_line, &size, stdin);
-
 		if (read == -1)
 		{
 			break;
@@ -21,9 +23,7 @@ void runShell(void)
 		{
 			in_line[read - 1] = '\0';
 		}
-		if (createProcess(in_line) == -1)
-		{
-		}
+		execute(in_line);
 	}
 	free(in_line);
 }
