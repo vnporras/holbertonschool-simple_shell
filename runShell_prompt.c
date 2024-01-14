@@ -24,6 +24,6 @@ void runShell(void)
 			in_line[read - 1] = '\0';
 		}
 		execute(in_line);
-		free(in_line);
 	}
+	free(in_line);
 }
