@@ -7,7 +7,7 @@
 
 void execute(char *userCommand)
 {
-	char *args[1024];
+	char *args[3000];
 	int argCount = 0;
 	char *token;
 	pid_t pid;
