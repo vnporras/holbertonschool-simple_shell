@@ -7,13 +7,13 @@
 
 void execute(char *userCommand)
 {
-	int inicialSize = 50;
+	int initialSize = 50;
 	int argCount = 0;
 	char *token;
 	pid_t pid;
 	char **args;
 
-	args = malloc(inicialSize *sizeof(char *));
+	args = malloc(initialSize *sizeof(char *));
 	if (args == NULL)
 	{
 		exit(EXIT_FAILURE);
