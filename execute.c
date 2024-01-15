@@ -19,8 +19,17 @@ void execute(char *userCommand)
 		exit(EXIT_FAILURE);
 	}
 	token = strtok(userCommand, " ");
-	while (token != NULL && argCount < 1023)
+	while (token != NULL)
 	{
+		if (argCount >= initialSize - 1)
+		{
+			initialSize *= 2;
+			args = realloc(args, initialSize * sizeof(char *));
+			if (args == NULL)
+			{
+				exit(EXIT_FAILURE);
+			}
+		}
 		args[argCount++] = token;
 		token = strtok(NULL, " ");
 	}
