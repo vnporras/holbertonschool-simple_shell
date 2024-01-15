@@ -7,11 +7,16 @@
 
 void execute(char *userCommand)
 {
-	char *args[3000];
 	int argCount = 0;
 	char *token;
 	pid_t pid;
+	char **args;
 
+	**args = malloc(inicialSize *sizeof(char *));
+	if (args == NULL)
+	{
+		exit(EXIT_FAILURE);
+	}
 	token = strtok(userCommand, " ");
 	while (token != NULL && argCount < 1023)
 	{
