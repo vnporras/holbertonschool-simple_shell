@@ -7,6 +7,7 @@
 
 void execute(char *userCommand)
 {
+	int inicialSize = 50;
 	int argCount = 0;
 	char *token;
 	pid_t pid;
