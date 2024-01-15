@@ -13,7 +13,7 @@ void execute(char *userCommand)
 	pid_t pid;
 	char **args;
 
-	**args = malloc(inicialSize *sizeof(char *));
+	args = malloc(inicialSize *sizeof(char *));
 	if (args == NULL)
 	{
 		exit(EXIT_FAILURE);
